@@ -12,7 +12,7 @@ Feature: creates a invoice
     And I have "date_of_creation" with "2024-06-03" in request body
     And I have "end_date" with "2024-07-03" in request body
     And I have "products" with product
-    And I have "sum" with "15.99" in request body
+    And I have "sum" with "356" in request body
     And I have "discount" with "0" in request body
     And I have "sum_of_discount" with "0" in request body
     When I send POST request
