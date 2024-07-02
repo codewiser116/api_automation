@@ -1,7 +1,5 @@
-import com.sun.net.httpserver.Request;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import org.json.JSONObject;
 
 import static org.hamcrest.Matchers.equalTo;

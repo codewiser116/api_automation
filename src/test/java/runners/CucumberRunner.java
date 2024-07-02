@@ -9,8 +9,8 @@ import org.testng.annotations.DataProvider;
         plugin = "html:target/reports/cucumberReport.html",
         features = "src/test/resources",
         glue = "steps",
-        tags = "@getInvoice",
-        dryRun = true
+        tags = "@smoke",
+        dryRun = false
 
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests {

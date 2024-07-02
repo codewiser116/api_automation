@@ -1,3 +1,4 @@
+@regression
 Feature: user should be able to create a category
 
   @createCategory
@@ -37,6 +38,7 @@ Feature: user should be able to create a category
       | 4.44        |
 
 
+    @smoke
   Scenario: verify category_title doesn't accept more than 255 chars
     Given base url "https://backend.cashwise.us/api/myaccount"
     And I have access

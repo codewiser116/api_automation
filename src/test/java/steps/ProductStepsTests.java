@@ -1,6 +1,5 @@
 package steps;
 
-import com.sun.net.httpserver.Request;
 import io.cucumber.java.en.*;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -9,9 +8,9 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 import utilities.DBUtilities;
 
-import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -21,15 +20,13 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class ProductSteps {
+public class ProductStepsTests {
     String id;
 
     RequestSpecification request;
     Response response;
     String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjE5MjE4MTgsImlhdCI6MTcxOTMyOTgxOCwidXNlcm5hbWUiOiJxYXRlc3RlckBnbWFpbC5jb20ifQ.fv8GVvDXSsaJ-VZTQHjXem6QcqWI5gerLvuDAsRPShkF8Xnu7pkSJF4hUp7W70sB6-JeJQu_Bo8OuFxyBWhYew";
     JSONObject requestBody = new JSONObject();
-
-
 
     @Given("base url {string}")
     public void base_url(String baseUrl) {

@@ -1,6 +1,7 @@
+@regression
 Feature: end to end scenario to validate invoice on API and DB
 
-  @getInvoice
+  @getInvoice @smoke
   Scenario: verify invoice details are displayed accurately
     Given base url "https://backend.cashwise.us/api/myaccount"
     And I have access

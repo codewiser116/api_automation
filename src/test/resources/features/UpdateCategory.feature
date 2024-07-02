@@ -1,5 +1,7 @@
+@regression
 Feature: verify user can update a category
 
+  @updateCategory
   Scenario: verify user successfully updates category_title
     Given base url "https://backend.cashwise.us/api/myaccount"
     And I have access

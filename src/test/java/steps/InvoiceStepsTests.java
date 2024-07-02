@@ -1,11 +1,10 @@
 package steps;
 
-import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 
-public class InvoiceSteps {
+public class InvoiceStepsTests {
 
     RequestSpecification request;
     Response response;

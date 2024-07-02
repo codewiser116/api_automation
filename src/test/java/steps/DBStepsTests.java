@@ -2,12 +2,11 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import utilities.Config;
 import utilities.DBUtilities;
 
 import java.sql.*;
 
-public class DBSteps {
+public class DBStepsTests {
 
     @Then("verify {string} with {string} is in database")
     public void verify_with_is_in_database(String key, String value) throws SQLException {
