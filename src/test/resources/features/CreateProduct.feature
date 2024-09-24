@@ -4,7 +4,7 @@ Feature: creates a product
   Background:
     Given base url "https://backend.cashwise.us/api/myaccount"
 
-  @createProduct
+   @oles
   Scenario: user successfully creates a product
     And I have access
     And I have the endpoint "/products"
@@ -28,7 +28,7 @@ Feature: creates a product
 
 
 
-  @createProduct
+  @createProduct222
   Scenario: verify product_title is null if user creates product without giving product_title
     And I have access
     And I have the endpoint "/products"
